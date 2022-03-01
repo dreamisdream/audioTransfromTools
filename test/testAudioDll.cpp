@@ -4,12 +4,10 @@
 #include <iostream>
 #include <string>
 
-#include "common.h"
-#include "PcmSerializeApi.h"
+#include "../../../AudioSerialize/include/common.h"
+#include "../../../AudioSerialize/include/PcmSerializeApi.h"
 
 using namespace std;
-
-#pragma comment(lib,"PcmSerializeApi.lib")
 
 string pcmName("d://pcm_8000_16_1");
 void pcm2G711a()
@@ -103,15 +101,6 @@ int main()
     //pcm2G711a();
     testPcm8To16("d://pcm_8000_8_1.pcm");
     std::cout << "Hello World!\n";
+    getchar();
 }
 
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
-
-// 入门使用技巧: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件
