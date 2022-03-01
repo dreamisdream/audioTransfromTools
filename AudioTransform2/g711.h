@@ -13,7 +13,7 @@ enum g711type { G711ULAW, G711ALAW };
  * @param type g711 data type
  * @return int encode data length
  */
- int g711EnCode(char *pCodecBits, char *pBuffer,int BufferSize,int gtype);
+int g711EnCode(char *pCodecBits, char *pBuffer, int BufferSize, int gtype); 
 
 /**
  * @brief g711 data decode to pcm data

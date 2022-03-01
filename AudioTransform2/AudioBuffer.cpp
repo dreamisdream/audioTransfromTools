@@ -1,18 +1,17 @@
 #include "AudioBuffer.h"
 #include <iostream>
 
+// 缓存容量
 const int g_BufferLen = 1024 * 128;
 
 AudioBuffer::AudioBuffer() 
 {
-    printf("%s %d\n", __FUNCTION__, __LINE__);
     m_data = new unsigned char[g_BufferLen];
     m_len = 0;
 }
 
 AudioBuffer::~AudioBuffer() 
 {
-    printf("%s %d\n", __FUNCTION__, __LINE__);
     delete []m_data;
     m_data = nullptr;
 }
@@ -37,6 +36,7 @@ int AudioBuffer::getData(unsigned char *dest, int howYouWant)
 {
     if (m_len == 0 )
         return 0;
+    // 不够缓存容量 全部取出
     if (m_len < howYouWant) {
         memcpy(dest, m_data, m_len);
         memset(m_data, 0, m_len);

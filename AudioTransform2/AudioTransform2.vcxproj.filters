@@ -39,20 +39,14 @@
     <ClInclude Include="G726ToPcm.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Pcm2G7.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="g711.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="pcmEncode.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="PcmSerializeApi.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pcmEncode.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="AudioBuffer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -71,10 +65,10 @@
     <ClCompile Include="G726ToPcm.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Pcm2G7.cpp">
+    <ClCompile Include="g711.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="g711.cpp">
+    <ClCompile Include="PcmSerializeApi.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

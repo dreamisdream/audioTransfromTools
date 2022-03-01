@@ -7,7 +7,8 @@ enum Law
     Law_ULaw = 0, 		/**< U law */
     Law_ALaw = 1, 		/**< A law */
     Law_PCM16 = 2, 		/**< 16 bit uniform PCM values. 原始 pcm 数据 */
-    Law_G726 = 3		/**< G726 */
+    Law_PCM8 = 3,
+    Law_G726 = 4		/**< G726 */
 };
 
 enum Rate
